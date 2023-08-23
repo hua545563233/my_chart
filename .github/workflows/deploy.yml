@@ -12,7 +12,7 @@ jobs:
     
     - name: use node.js
       uses: actions/setup-node@v2
-      width:
+      with:
         node-version: 10.x
     - name: install dependencies
       run: npm install
