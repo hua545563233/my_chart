@@ -1,5 +1,8 @@
 const { defineConfig } = require('@vue/cli-service')
 module.exports = defineConfig({
   transpileDependencies: true,
-  assetsDir: './'
+  assetsDir: './',
+  publicPath: process.env.NODE_ENV === 'production'
+  ? '/my-chart/'
+  : '/'
 })
