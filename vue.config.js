@@ -3,6 +3,6 @@ module.exports = defineConfig({
   transpileDependencies: true,
   assetsDir: './',
   publicPath: process.env.NODE_ENV === 'production'
-  ? '/my-chart/'
+  ? '/my_chart/'
   : '/'
 })
